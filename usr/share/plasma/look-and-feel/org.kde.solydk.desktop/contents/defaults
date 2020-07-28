@@ -1,0 +1,43 @@
+[Desktop][org.kde.plasma.desktop]
+Containment=org.kde.plasma.folder
+
+[kdeglobals][KDE]
+LookAndFeelPackage=org.kde.solydk.desktop
+widgetStyle=breeze
+SingleClick=false
+
+[kdeglobals][General]
+ColorScheme=SolydK
+Name=SolydK
+fixed=Monospace,10,-1,0,50,0,0,0,0,0
+font=Clear Sans,11,-1,0,50,0,0,0,0,0
+menuFont=Clear Sans,11,-1,0,50,0,0,0,0,0
+shadeSortColumn=true
+smallestReadableFont=Clear Sans,10,-1,0,50,0,0,0,0,0
+toolBarFont=Clear Sans,10,-1,0,50,0,0,0,0,0
+
+[kdeglobals][Icons]
+Theme=evolvere-2-blue
+
+[kdeglobals][WM]
+activeFont=Clear Sans,11,-1,0,75,0,0,0,0,0
+
+[plasmarc][Theme]
+name=solydk
+
+[kcminputrc][Mouse]
+cursorTheme=oxy-white
+
+[kwinrc][TabBox]
+LayoutName=org.kde.solydk.desktop
+
+[kwinrc][TabBoxAlternative]
+LayoutName=org.kde.solydk.desktop
+
+[kwinrc][WindowSwitcher]
+LayoutName=org.kde.solydk.desktop
+
+[kwinrc][DesktopSwitcher]
+LayoutName=org.kde.solydk.desktop
+
+

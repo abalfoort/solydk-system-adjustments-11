@@ -1,0 +1,12 @@
+[Common]
+ShadowSize=15
+ShadowStrength=89
+
+[Windeco]
+AnimationsEnabled=false 
+DrawBackgroundGradient=false
+
+[Style]
+AnimationsEnabled=false
+ViewDrawFocusIndicator=false
+WindowDragMode=WD_NONE
