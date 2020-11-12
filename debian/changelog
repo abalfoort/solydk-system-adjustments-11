@@ -1,3 +1,15 @@
+solydk-system-adjustments-11 (3.2.6) stable; urgency=low
+
+  * Rename Grub theme to solydxk
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Tue, 10 Nov 2020 13:09:43 +0100
+
+solydk-system-adjustments-11 (3.2.5) stable; urgency=low
+
+  * Do not use user background for lightdm
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 09 Nov 2020 16:24:14 +0100
+
 solydk-system-adjustments-11 (3.2.4) stable; urgency=low
 
   * Remove Adobe Caslon fonts
@@ -18,7 +30,7 @@ solydk-system-adjustments-11 (3.2.2) stable; urgency=low
 
 solydk-system-adjustments-11 (3.2.1) stable; urgency=low
 
-  * Remove ClearSans fonts and make fonts-clear-sans and dependency
+  * Remove ClearSans fonts and make fonts-clear-sans a dependency
 
  -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 07 May 2020 11:26:35 +0200
 

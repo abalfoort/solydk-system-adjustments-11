@@ -89,7 +89,7 @@ case "$1" in
       sed_append_sting 'font-name=' 'font-name=Clear Sans 11' $CONF
       sed_append_sting 'position=' 'position=60% 30%' $CONF
       sed_append_sting 'transition-duration=' 'transition-duration=1000' $CONF
-      sed_append_sting 'user-background=' 'user-background=true' $CONF
+      sed_append_sting 'user-background=' 'user-background=false' $CONF
       sed_append_sting 'xft-antialias=' 'xft-antialias=true' $CONF
       sed_append_sting 'xft-dpi=' 'xft-dpi=96' $CONF
       sed_append_sting 'xft-hintstyle=' 'xft-hintstyle=slight' $CONF
@@ -118,11 +118,11 @@ case "$1" in
     if [ -f "$DEFGRUB" ]; then
       UPDGRUB=true
       if grep -q '^GRUB_THEME=' $DEFGRUB; then
-        sed -i 's|^GRUB_THEME=.*|GRUB_THEME=/boot/grub/themes/solydk/theme.txt|' $DEFGRUB
+        sed -i 's|^GRUB_THEME=.*|GRUB_THEME=/boot/grub/themes/solydxk/theme.txt|' $DEFGRUB
       else
         if ! grep -q 'GRUB_THEME=' $DEFGRUB; then
           # Only append if GRUB_THEME= is not in DEFGRUB
-          echo -e '\n# Set theme\nGRUB_THEME=/boot/grub/themes/solydk/theme.txt' >> $DEFGRUB
+          echo -e '\n# Set theme\nGRUB_THEME=/boot/grub/themes/solydxk/theme.txt' >> $DEFGRUB
         fi
       fi
     fi
