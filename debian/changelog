@@ -1,3 +1,15 @@
+solydk-system-adjustments-11 (3.2.8) stable; urgency=low
+
+  * Remove widget org.kde.plasma.volume: now in systray
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Mon, 28 Dec 2020 14:57:24 +0100
+
+solydk-system-adjustments-11 (3.2.7) stable; urgency=low
+
+  * Update unattended upgrade configuration
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 02 Dec 2020 09:12:46 +0100
+
 solydk-system-adjustments-11 (3.2.6) stable; urgency=low
 
   * Rename Grub theme to solydxk
