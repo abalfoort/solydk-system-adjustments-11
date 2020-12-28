@@ -49,8 +49,8 @@ eitm.writeConfig("separateLaunchers", false)
 eitm.writeConfig("groupPopups", false)
 eitm.writeConfig("sortingStrategy", 1)
 
-// Add volume control
-panel.addWidget('org.kde.plasma.volume')
+// Add volume control (now found in system tray)
+//panel.addWidget('org.kde.plasma.volume')
 
 // Add system tray
 var systray = panel.addWidget("org.kde.plasma.systemtray")
