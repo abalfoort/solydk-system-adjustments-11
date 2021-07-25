@@ -1,3 +1,5 @@
+// https://userbase.kde.org/KDE_System_Administration/PlasmaDesktopScripting
+
 var panel = new Panel
 var panelScreen = panel.screen
 var freeEdges = {"bottom": true, "top": true, "left": true, "right": true}
@@ -43,23 +45,16 @@ showdt.currentConfigGroup = ["General"]
 // Add dolphin
 var eitm = panel.addWidget("org.kde.plasma.taskmanager")
 eitm.currentConfigGroup = ["General"]
-eitm.writeConfig("launchers" ,"file:///usr/share/applications/org.kde.dolphin.desktop?wmClass=Dolphin")
+eitm.writeConfig("launchers", ["applications:org.kde.dolphin.desktop"])
 eitm.writeConfig("showOnlyCurrentDesktop", true)
-eitm.writeConfig("separateLaunchers", false)
-eitm.writeConfig("groupPopups", false)
-eitm.writeConfig("sortingStrategy", 1)
-
-// Add volume control (now found in system tray)
-//panel.addWidget('org.kde.plasma.volume')
 
 // Add system tray
 var systray = panel.addWidget("org.kde.plasma.systemtray")
 var systrayContainmentId = systray.readConfig("SystrayContainmentId")
 var systrayContainment = desktopById(systrayContainmentId)
 systrayContainment.currentConfigGroup = ["General"]
-systrayContainment.writeConfig("extraItems","org.kde.plasma.devicenotifier,org.kde.plasma.networkmanagement,org.kde.discovernotifier,org.kde.plasma.diskquota,org.kde.plasma.bluetooth,org.kde.plasma.clipboard,org.kde.plasma.printmanager,org.kde.plasma.battery")
-systrayContainment.writeConfig("knownItems", "org.kde.plasma.volume,org.kde.plasma.networkmanagement,org.kde.plasma.bluetooth,org.kde.plasma.battery,org.kde.discovernotifier,org.kde.plasma.clipboard,org.kde.plasma.mediacontroller,org.kde.plasma.devicenotifier,org.kde.plasma.notifications,org.kde.plasma.printmanager,org.kde.plasma.notifications,org.kde.kdeconnect")
-systrayContainment.writeConfig("hiddenItems","org.kde.plasma.clipboard")
+systrayContainment.writeConfig("extraItems",["org.kde.plasma.volume", "org.kde.plasma.devicenotifier","org.kde.plasma.networkmanagement","org.kde.discovernotifier","org.kde.plasma.diskquota","org.kde.plasma.bluetooth","org.kde.plasma.clipboard","org.kde.plasma.printmanager","org.kde.plasma.battery"])
+systrayContainment.writeConfig("hiddenItems",["org.kde.plasma.clipboard"])
 
 // Add notifications
 panel.addWidget("org.kde.plasma.notifications")
@@ -67,3 +62,4 @@ panel.addWidget("org.kde.plasma.notifications")
 // Add the clock
 var clock = panel.addWidget("org.kde.plasma.digitalclock")
 clock.writeConfig("showDate", false)
+clock.writeConfig("showWeekNumbers", true)
