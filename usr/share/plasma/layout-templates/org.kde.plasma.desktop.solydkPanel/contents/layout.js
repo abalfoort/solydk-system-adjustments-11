@@ -43,10 +43,20 @@ var showdt = panel.addWidget("org.kde.plasma.showdesktop")
 showdt.currentConfigGroup = ["General"]
 
 // Add dolphin
-var eitm = panel.addWidget("org.kde.plasma.taskmanager")
-eitm.currentConfigGroup = ["General"]
-eitm.writeConfig("launchers", ["applications:org.kde.dolphin.desktop"])
-eitm.writeConfig("showOnlyCurrentDesktop", true)
+var icon = panel.addWidget("org.kde.plasma.icon")
+icon.currentConfigGroup = ["General"]
+icon.writeConfig("url", ["file:///usr/share/applications/org.kde.dolphin.desktop"])
+
+// Add taskmanager
+var task = panel.addWidget("org.kde.plasma.taskmanager")
+task.currentConfigGroup = ["General"]
+task.writeConfig("launchers", [])
+task.writeConfig("showOnlyCurrentDesktop", true)
+task.writeConfig("groupingStrategy", "0")
+task.writeConfig("maxStripes", "1")
+task.writeConfig("showOnlyCurrentActivity", true)
+task.writeConfig("showOnlyCurrentDesktop", true)
+task.writeConfig("sortingStrategy", "1")
 
 // Add system tray
 var systray = panel.addWidget("org.kde.plasma.systemtray")

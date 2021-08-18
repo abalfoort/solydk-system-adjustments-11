@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.3.1) stable; urgency=low
+
+  * Move dolphin panel launcher to org.kde.plasma.icon plasmoid
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 15 Aug 2021 12:59:31 +0200
+
 solydk-system-adjustments-11 (3.3.0) stable; urgency=low
 
   * Remove double audio widget in panel
