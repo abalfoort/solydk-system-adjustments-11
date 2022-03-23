@@ -1,9 +1,9 @@
 applet.currentConfigGroup = ["Shortcuts"]
-applet.writeConfig("global", "Alt+F1")
+applet.writeConfig("global", "Meta+F1")
 
 applet.currentConfigGroup = ["General"]
-applet.writeConfig("icon", "file:///usr/share/pixmaps/solydk.xpm")
-applet.writeConfig("favorites", ["firefox-esr.desktop", "thunderbird.desktop", "libreoffice-startcenter.desktop", "synaptic.desktop", "systemsettings.desktop", "org.kde.konsole.desktop"])
-//applet.writeConfig("hiddenApplications", "org.kde.ksshaskpass.desktop,libreoffice-draw.desktop,libreoffice-base.desktop,libreoffice-math.desktop,lximage-qt-screenshot.desktop,audacious-qt.desktop")
+applet.writeConfig("icon", "solydk")
+applet.writeConfig("favorites", ["preferred://browser","thunderbird.desktop","libreoffice-startcenter.desktop","org.kde.discover.desktop","systemsettings.desktop","org.kde.konsole.desktop"])
+applet.writeConfig("alphaSort", true)
 
 applet.reloadConfig();
