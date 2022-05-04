@@ -1,3 +1,21 @@
+solydk-system-adjustments-11 (3.3.6) stable; urgency=low
+
+  * Change PRETTY_NAME in /etc/os-release
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Thu, 28 Apr 2022 16:50:19 +0200
+
+solydk-system-adjustments-11 (3.3.5) stable; urgency=low
+
+  * Fixed info file
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 27 Apr 2022 12:29:53 +0200
+
+solydk-system-adjustments-11 (3.3.4) stable; urgency=low
+
+  * Swapped CODENAME and DISTRIB_ID in /usr/share/solydxk/info
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 20 Apr 2022 19:08:45 +0200
+
 solydk-system-adjustments-11 (3.3.3) stable; urgency=low
 
   * Disable favoriteSystemActions in kicker
