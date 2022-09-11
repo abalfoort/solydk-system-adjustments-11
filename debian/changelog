@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.3.7) stable; urgency=low
+
+  * Add use24hFormat=2 to panel clock
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Wed, 07 Sep 2022 12:13:10 +0200
+
 solydk-system-adjustments-11 (3.3.6) stable; urgency=low
 
   * Change PRETTY_NAME in /etc/os-release
