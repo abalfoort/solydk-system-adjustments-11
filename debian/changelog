@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.3.8) stable; urgency=low
+
+  * Remove gtkhash: now part of file permissions
+
+ -- Arjen Balfoort <arjenbalfoort@solydxk.com>  Sun, 01 Jan 2023 19:30:04 +0100
+
 solydk-system-adjustments-11 (3.3.7) stable; urgency=low
 
   * Add use24hFormat=2 to panel clock

@@ -42,12 +42,12 @@ terminal-border: "0"
     width = 74%
     top = 50%
     height = 200
-    item_font = "Unifont Regular 18"
-    selected_item_font = "Unifont Regular 18"
+    item_font = "Unifont Regular 20"
+    selected_item_font = "Unifont Regular 20"
     item_color = "#999"
     selected_item_color= "#fff"
-    icon_height = 18
-    icon_width = 18
+    icon_height = 20
+    icon_width = 20
     item_height = 24
     item_padding = 0
     item_icon_space = 8
