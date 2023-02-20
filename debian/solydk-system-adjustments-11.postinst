@@ -16,8 +16,6 @@ set -e
 # the debian-policy package
 #
 
-# Set this to true when you changed the Plymouth theme but not the name (solydk-logo)
-FORCE_PLYMOUTH=true
 # Set the name of the Plymouth theme
 PLYMOUTH_THEME='solydk-logo'
 
@@ -50,29 +48,6 @@ case "$1" in
     if [ -e "$KF5KDESUD" ]; then
       chmod g+s "$KF5KDESUD"
     fi
-
-    # Setup info file
-    INFO='/usr/share/solydxk/info'
-    . $INFO
-    DT=${DESKTOP:0:1}; [ "$DT" != "L" ] || DT=LXQt # ditto
-    # Double check for the ee-info package
-    if [ -d '/usr/share/doc/solydxee-info' ] || [ -d '/usr/share/doc/solydkee-info' ]; then
-      EE=ee
-    fi
-    # Get the architecture
-    UNAME=$(uname -m)
-    ARCH=32
-    if [ "${UNAME:0:3}" == "arm" ]; then
-      ARM=arm
-    elif [ "$UNAME" == "x86_64" ]; then
-      ARCH=64
-    fi
-    # rewrite the EDITION line   
-    sed -i 's|^EDITION.*$|EDITION="solyd'${DT,,}$ARM$EE$ARCH'"|' $INFO
-    # rewrite the DESCRIPTION line
-    sed -i 's|^DESCRIPTION.*$|DESCRIPTION="'"Solyd$DT${EE:+ EE} $RELEASE ${ARM:+ARM }$ARCH-bit"'"|' $INFO
-    # rewrite the LANG line
-    #sed -i 's|^LANG.*$|LANG='$LANG'|' $INFO
     
     # Configure LightDM
     CONF='/etc/lightdm/lightdm-gtk-greeter.conf'
@@ -134,7 +109,7 @@ case "$1" in
       if [[ "$CURTHEME" == "$PLYMOUTH_THEME"* ]]; then
         PLYMOUTH_THEME=$CURTHEME
       fi
-      if ! grep -q "$PLYMOUTH_THEME" "$CONF" || ( $FORCE_PLYMOUTH && grep -q "$PLYMOUTH_THEME" "$CONF" ); then
+      if grep -q "$PLYMOUTH_THEME" "$CONF"; then
         plymouth-set-default-theme -R "$PLYMOUTH_THEME"
         UPDGRUB=true
       fi
@@ -143,11 +118,6 @@ case "$1" in
     # Update Grub2
     if $UPDGRUB && [ -e /usr/sbin/update-grub ]; then
       update-grub
-    fi
-
-    ADJ='/usr/lib/solydxk/system/adjust.py'
-    if [ -e "$ADJ" ]; then
-      python3 "$ADJ"
     fi
     
     GPG='/etc/skel/.gnupg'
