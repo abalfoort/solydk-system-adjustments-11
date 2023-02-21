@@ -1,7 +1,7 @@
 Source: solydk-system-adjustments-11
 Section: admin
 Priority: optional
-Maintainer: Arjen Balfoort <arjenbalfoort@solydxk.com>
+Maintainer: Arjen Balfoort <arjenbalfoort@hotmail.com>
 Build-Depends: debhelper-compat (= 12)
 Standards-Version: 4.5.0
 
