@@ -35,6 +35,27 @@ function sed_append_sting {
   fi
 }
 
+function install_root_files {
+    mkdir -p /root/.config/gtk-3.0
+    mkdir -p /root/.local/share
+    
+    if [ ! -e /root/.config/gtk-3.0/settings.ini ]; then
+        cp -f /usr/share/solydxk/root_files/.config/gtk-3.0/settings.ini /root/.config/gtk-3.0/
+    fi
+    if [ ! -e /root/.config/fontconfig ]; then
+        cp -rf /usr/share/solydxk/root_files/.config/fontconfig /root/.config/
+    fi
+    if [ ! -e /root/.config/kdeglobals ]; then
+        cp -f /usr/share/solydxk/root_files/.config/kdeglobals /root/.config/
+    fi
+    if [ ! -e /root/.local/share/dolphin ]; then
+        cp -rf /usr/share/solydxk/root_files/.local/share/dolphin /root/.local/share/
+    fi
+    if [ ! -e /root/.gtkrc-2.0 ]; then
+        cp -f /usr/share/solydxk/root_files/.gtkrc-2.0 /root/
+    fi
+}
+
 case "$1" in    
   configure|reconfigure)
     # Create a link to kdesu in /usr/bin
@@ -129,6 +150,8 @@ case "$1" in
     if [ ! -d "$DOLPHINDIR" ]; then
       mkdir -p "$DOLPHINDIR"
     fi
+    
+    install_root_files
    
   ;;
 

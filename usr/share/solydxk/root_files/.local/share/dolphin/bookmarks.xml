@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE xbel>
+<xbel xmlns:bookmark="http://www.freedesktop.org/standards/desktop-bookmarks" dbusName="dolphin" xmlns:kdepriv="http://www.kde.org/kdepriv" xmlns:mime="http://www.freedesktop.org/standards/shared-mime-info">
+ <bookmark href="filenamesearch:?search=:&amp;url=file:///media/KINGSTON/Proko&amp;title=Query%20Results%20from%20':'">
+  <title>Search for :</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="edit-find"/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///media/EXTHD/Films/Films/">
+  <title>Films</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/arjen/Downloads">
+  <title>Downloads</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/arjen/Downloads">
+  <title>Downloads</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+  </info>
+ </bookmark>
+ <bookmark href="file:///home/arjen/dev/calamares/workingdir">
+  <title>workingdir</title>
+  <info>
+   <metadata owner="http://freedesktop.org">
+    <bookmark:icon name="inode-directory"/>
+   </metadata>
+  </info>
+ </bookmark>
+</xbel>
