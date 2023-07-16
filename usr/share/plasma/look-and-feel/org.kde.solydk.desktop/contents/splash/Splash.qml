@@ -30,7 +30,7 @@ Rectangle {
     Rectangle {
         id: logobg
         color: "#ffffff"
-        width: root.width / 6
+        width: root.width / 5
         height: root.height
         anchors.right: root.right
         
@@ -41,7 +41,7 @@ Rectangle {
             anchors.horizontalCenter: logobg.horizontalCenter
             anchors.topMargin: 40
             source: "images/solydk.svgz"
-            sourceSize.width: logobg.width / 1.5
+            sourceSize.width: logobg.width / 1.8
             SequentialAnimation on opacity {
                 loops: Animation.Infinite
                 OpacityAnimator{

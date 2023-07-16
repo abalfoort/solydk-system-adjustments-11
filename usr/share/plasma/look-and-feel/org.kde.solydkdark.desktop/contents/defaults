@@ -2,12 +2,12 @@
 Containment=org.kde.plasma.folder
 
 [kdeglobals][KDE]
-LookAndFeelPackage=org.kde.solydk-dark.desktop
+LookAndFeelPackage=org.kde.solydkdark.desktop
 widgetStyle=breeze
 SingleClick=false
 
 [kdeglobals][General]
-ColorScheme=SolydK Dark
+ColorScheme=SolydKDark
 Name=SolydK Dark
 fixed=Monospace,10,-1,0,50,0,0,0,0,0
 font=Clear Sans,11,-1,0,50,0,0,0,0,0
@@ -28,16 +28,17 @@ name=solydk-dark
 [kcminputrc][Mouse]
 cursorTheme=oxy-white
 
-[kwinrc][TabBox]
-LayoutName=org.kde.solydk-dark.desktop
-
-[kwinrc][TabBoxAlternative]
-LayoutName=org.kde.solydk-dark.desktop
-
 [kwinrc][WindowSwitcher]
-LayoutName=org.kde.solydk-dark.desktop
+LayoutName=org.kde.solydkdark.desktop
 
 [kwinrc][DesktopSwitcher]
-LayoutName=org.kde.solydk-dark.desktop
+LayoutName=org.kde.solydkdark.desktop
 
+[kwinrc][org.kde.kdecoration2]
+library=org.kde.breeze
 
+[KSplash]
+Theme=org.kde.solydkdark.desktop
+
+[Wallpaper]
+Image=SolydKDark

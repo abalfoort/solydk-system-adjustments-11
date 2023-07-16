@@ -8,7 +8,7 @@
         ],
         "Category": "",
         "Description": "SolydK Dark Desktop Design",
-        "Id": "org.kde.solydk-dark.desktop",
+        "Id": "org.kde.solydkdark.desktop",
         "License": "GPLv2+",
         "Name": "SolydK Dark",
         "ServiceTypes": [

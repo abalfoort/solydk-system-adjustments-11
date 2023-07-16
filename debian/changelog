@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.4.5) stable; urgency=low
+
+  * Updated graphics
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 03 Jul 2023 15:31:12 +0200
+
 solydk-system-adjustments-11 (3.4.4) stable; urgency=low
 
   * Replace desktop-grub.png with a generic black image
