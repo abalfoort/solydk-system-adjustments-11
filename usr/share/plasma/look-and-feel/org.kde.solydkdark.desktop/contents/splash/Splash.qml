@@ -18,10 +18,11 @@
  */
 
 import QtQuick 2.5
+import QtQuick.Window 2.2
 
 // http://doc.qt.io/qt-5/qtquick-index.html
 // http://doc.qt.io/qt-5/qtquick-animation-example.html
-// ksplashqml SolydK --test
+// ksplashqml solydk-dark --test
 
 Rectangle {
     id: root

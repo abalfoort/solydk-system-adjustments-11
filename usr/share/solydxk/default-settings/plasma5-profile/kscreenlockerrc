@@ -1,6 +1,4 @@
 [Daemon]
-Timeout=0
 Autolock=false
-
-[Greeter]
-ThemeBackground=org.kde.solydk.desktop
+LockGrace=0
+LockOnResume=false

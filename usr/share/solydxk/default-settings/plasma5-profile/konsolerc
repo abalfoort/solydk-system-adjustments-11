@@ -1,8 +1,2 @@
 [Desktop Entry]
-DefaultProfile=SolydK.profile
-
-[Favorite Profiles]
-Favorites=SolydK.profile,SolydK Dark.profile
-
-[KonsoleWindow]
-AllowMenuAccelerators=true
+DefaultProfile=solydk-light.profile
