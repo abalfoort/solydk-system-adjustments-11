@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.4.6) stable; urgency=low
+
+  * Changed directory structure
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 17 Jul 2023 12:08:19 +0200
+
 solydk-system-adjustments-11 (3.4.5) stable; urgency=low
 
   * Updated graphics
