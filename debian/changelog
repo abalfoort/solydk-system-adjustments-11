@@ -1,3 +1,9 @@
+solydk-system-adjustments-11 (3.4.8) stable; urgency=low
+
+  * Plymouth theme smaller password character (bullet.png)
+
+ -- Arjen Balfoort <arjenbalfoort@hotmail.com>  Mon, 21 Aug 2023 12:01:52 +0200
+
 solydk-system-adjustments-11 (3.4.7) stable; urgency=low
 
   * Fix missing fonts in themes
